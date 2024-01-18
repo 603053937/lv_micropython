@@ -29,3 +29,4 @@ jobs:
       with:
         name: ${{ matrix.board }}.hex
         path: ports/rp2/build-${{ matrix.board }}/firmware.uf2
+        
