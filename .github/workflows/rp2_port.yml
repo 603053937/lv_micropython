@@ -28,4 +28,4 @@ jobs:
       if: ${{ env.GITHUB_EVENT_NAME }} == 'push'
       with:
         name: ${{ matrix.board }}.hex
-        path: ports/rp2/build-${{ matrix.board }}/firmware.elf
+        path: ports/rp2/build-${{ matrix.board }}/firmware.uf2
