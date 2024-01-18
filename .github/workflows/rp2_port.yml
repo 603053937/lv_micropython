@@ -27,5 +27,5 @@ jobs:
     - uses: actions/upload-artifact@v2
       if: ${{ env.GITHUB_EVENT_NAME }} == 'push'
       with:
-        name: ${{ matrix.board }}.hex
-        path: ports/rp2/build-${{ matrix.board }}/firmware.elf
+        name: ${{ matrix.board }}
+        path: ports/rp2/build-${{ matrix.board }}/firmware.uf2
